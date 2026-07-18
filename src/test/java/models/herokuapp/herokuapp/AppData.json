@@ -1,4 +1,10 @@
 {
+  "createToken": [
+    {
+      "username": "admin",
+      "password": "password123"
+    }
+  ],
   "createBooking": [
     {
       "firstname": "Jim",
@@ -16,19 +22,19 @@
     {
       "firstname": "James",
       "lastname": "Brown",
-      "totalprice": 111,
+      "totalprice": 150,
       "depositpaid": true,
       "bookingdates": {
         "checkin": "2018-01-01",
         "checkout": "2019-01-01"
       },
-      "additionalneeds": "Breakfast"
+      "additionalneeds": "Lunch"
     }
   ],
-  "PartialUpdateBooking": [
+  "partialUpdateBooking": [
     {
       "firstname": "Vaibhav",
-      "lastname": "Brown"
+      "lastname": "Chavan"
     }
   ]
 }

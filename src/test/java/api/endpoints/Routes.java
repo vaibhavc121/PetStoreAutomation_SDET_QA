@@ -14,6 +14,7 @@ public class Routes
 {
     public static String BASE_URL = "https://petstore.swagger.io/v2";
     public static String BASE_URL_HEROKUAPP = "https://restful-booker.herokuapp.com/booking";
+    public static String token = "https://restful-booker.herokuapp.com/auth";
 
     // User Module
     public static String post_url = BASE_URL + "/user"; // Create user
@@ -45,6 +46,7 @@ public class Routes
     //==========================
     // Booking Module
     //==========================
+    public static final String CREATE_TOKEN = token;
     public static final String GET_BOOKING_IDS = BASE_URL_HEROKUAPP;
     public static final String GET_BOOKING = BASE_URL_HEROKUAPP + "/{id}";
     public static final String CreateBooking = BASE_URL_HEROKUAPP;

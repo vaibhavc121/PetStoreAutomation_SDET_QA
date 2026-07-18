@@ -7,21 +7,13 @@
         "name": "Dog"
       },
       "name": "Bruno",
-      "uname": "U Bruno",
       "tags": [
         {
           "id": 1,
           "name": "Friendly"
         }
       ],
-      "utags": [
-        {
-          "id": 2,
-          "name": "u Friendly"
-        }
-      ],
-      "status": "available",
-      "ustatus": "available"
+      "status": "available"
     }
   ],
   "updatePet": [
