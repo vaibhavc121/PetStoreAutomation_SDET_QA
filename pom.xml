@@ -14,6 +14,66 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!--plug-ins required for executing tests-->
+    <build>
+        <!-- To define the plugin version in your parent POM -->
+        <pluginManagement>
+            <plugins>
+
+                <!--For compiling the project and code-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.13.0</version>
+                </plugin>
+
+                <!--for running the project-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.5.0</version>
+                    <configuration>
+                        <suiteXmlFiles>
+                            <!--suppress UnresolvedMavenProperty -->
+                            <!--<suiteXmlFile>testng-suites/AdhocTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/APITestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/AzureDevops.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/BrowserStack.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/CompatibilityTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/DataDriven TestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/EndToEndTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/FunctionalTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/GithubActions.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/Grid.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/GridDocker.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/Grouping.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/IntegrationTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/Jenkins.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/MySQLTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/ParallelTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/PerformanceTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/SanityTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/SecurityTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/SmokeTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/UlTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/CrossBrowserTesting.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/SequentialCrossBrowserTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/MasterTestSuite.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/RegressionTestSuite0.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/RegressionTestSuite1.xml</suiteXmlFile>-->
+                            <!--<suiteXmlFile>testng-suites/NewTestCasesSuite.xml</suiteXmlFile>-->
+                            <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+
+                        </suiteXmlFiles>
+                        <!--<argLine>-Djava.awt.headless=true</argLine>  Headless mode for Surefire -->
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
+    </build>
+
     <dependencies>
         <!-- Source: https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
