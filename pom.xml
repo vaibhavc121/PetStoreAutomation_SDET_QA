@@ -8,11 +8,11 @@
     <artifactId>API_Automation_SDET_QA</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
-        <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <!-- <properties>
+         <maven.compiler.source>22</maven.compiler.source>
+         <maven.compiler.target>22</maven.compiler.target>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     </properties>-->
 
     <!--plug-ins required for executing tests-->
     <build>
