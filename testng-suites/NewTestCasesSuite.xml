@@ -21,13 +21,8 @@
         <parameter name="browser" value="chrome"></parameter>
 
         <classes>
-
-            <!-- New Test -->
+            <!-- NewTest -->
             <class name="api.test.HerokuappTest"/>
-            <class name="api.test.StoreTest"/>
-            <class name="api.test.PetTest"/>
-            <class name="api.test.UserTests"/>
-
         </classes>
     </test>
 
