@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+import jdk.jfr.Enabled;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -88,14 +89,14 @@ public class ExtentReportsUtils implements ITestListener
         test.log(Status.FAIL, result.getMethod().getMethodName() + " got failed");
         test.log(Status.INFO, result.getThrowable().getMessage());
 
-        try
-        {
+        /*try
+        { //dont need this code while api testing
             String imgPath = ScreenshotUtils.captureScreen(result.getMethod().getMethodName());
             test.addScreenCaptureFromPath(imgPath);
         } catch (Exception e1)
         {
             e1.printStackTrace();
-        }
+        }*/
     }
 
     @Override

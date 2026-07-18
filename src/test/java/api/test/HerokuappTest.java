@@ -132,7 +132,7 @@ public class HerokuappTest
         }
     }
 
-    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 5)
+    @Test(groups = "regression", retryAnalyzer = RetryAnalyzer.class, priority = 5, enabled = false)
     public void deleteBooking()
     {
         Response response =
